@@ -1,0 +1,185 @@
+/*
+CSS | Activite 2 - Puissance 4
+--------------------------
+@date: 03/02/2020;
+@author: ebiabian;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*
+BALISE
+-------------------------------*/
+
+html { 
+  background: url(https://p8.storage.canalblog.com/80/13/833312/99504152_o.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+input{
+	border: none;
+	margin: 10px;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 25px;
+	border-radius: 50px;
+	width: 100px;
+	text-align: center;
+	background-color: rgba(5,5,5,0.8);
+	font-style: italic;
+	color: #fff;
+	outline: none;
+	letter-spacing: 0.5pt;
+}
+
+button{
+	border: none;
+	padding: 5px;
+	padding-left: 10px; 
+	padding-right: 10px;
+	border-radius: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 10pt;
+	background-color: #44c95b;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover{
+	opacity: 0.7;
+}
+
+h3{
+	padding: 10px;
+	color: #fff;
+}
+
+font{
+	color: rgb(255, 0, 170);
+}
+
+/*
+ID
+-------------------------------*/
+
+#ins{
+	background-color: rgba(255,255,255,0.5);
+	position: fixed;
+	top: 0;left: 0;
+	margin: auto;
+	width: 100%;height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ins-panel{
+	display: flex;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.39);
+	border-radius: 10px;
+	align-items: center;
+	border: 3px solid rgba(5,5,5,0.8);
+	font-family: 'Times Nes Roman';
+}
+
+#plateau{
+	margin-top: 100px;
+	padding: 5px;
+	border: 2px solid #000;
+	background-color: #0025E1;
+	display: flex;
+	width: 380px;
+	height: 400px;
+	margin: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#status{
+	display: flex;
+	width: 100%;
+	top: 0;
+	left: 0;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+#info{
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+/* ------------------ */
+
+#resize_img {
+	width: 50px;
+	height: 50px;
+	/* margin-left: 50%;
+	margin-right: 50%; */
+}
+
+/*
+CLASS
+-------------------------------*/
+
+
+i.j1{
+	color: #0086cb;
+	font-size: 35pt;
+	padding: 5px;
+}
+
+i.j2{
+	color: #dd1414;
+	font-size: 35pt;
+	padding: 5px;
+}
+
+.ins-player{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.pion{
+	width: 20px;
+	height: 20px;
+	padding: 10px;
+	background-color: white;
+	margin: 5px;
+	border: 1px solid #000;
+	display: block;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.pion:hover{
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+.info{
+	display: flex;
+}
+
+.playing.j1{
+	background-color: #0086cb;
+}
+.playing.j2{
+	background-color: #dd1414;
+}

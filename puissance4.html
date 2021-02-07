@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act.2|Puissance4</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="puissance4.css">
+	
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/4f35156239.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="ins">
+		<div id="ins-panel">
+			<div class="ins-player">
+				<i class="fas fa-user j1"></i>
+				<input type="text" name="j1" placeholder="Joueur 1" maxlength="10">
+				<button onclick="ins(1);"><i class="fas fa-gamepad"></i> Play</button>
+			</div>
+			
+			<img src="./src/versus.png" id="resize_img" alt="versus">
+			
+			<div class="ins-player">
+				<i class="fas fa-user j2"></i>
+				<input type="text" name="j2" placeholder="Joueur 2" maxlength="10">
+				<button onclick="ins(2);"><i class="fas fa-gamepad"></i> Play</button>
+			</div>
+		</div>
+	</div>
+	<div id="jeu">
+		<div id="status">
+			<div class="info">
+				<i class="fas fa-user j1"></i>
+				<h3 id="j1-name">...</h3>
+			</div>
+			<img src="./src/versus.png" id="resize_img" alt="versus">
+			<div class="info">
+				<h3 id="j2-name">...</h3>
+				<i class="fas fa-user j2"></i>
+			</div>
+		</div>
+		<div id="content">
+			<div id="plateau">
+			</div>
+		</div>
+		<div id="info">  <font id="player-name"></font> : C'est votre tour ! </div>
+	</div>
+
+	<script text="text/javascript" src="puissance4.js"></script>
+</body>
+</html>
